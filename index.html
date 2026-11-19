@@ -7,13 +7,28 @@
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   />
   <meta name="theme-color" content="#f7f5f0" />
-  <title>Maria Clara | Psicologia, Psicanálise &amp; Recrutamento</title>
+  <title>Maria Clara | Psicologia &amp; Recrutamento</title>
+  <meta name="description" content="Maria Clara — estudante de Psicologia com atuação em Recrutamento e Seleção, acompanhamento profissional e desenvolvimento pessoal. Fale comigo pelo WhatsApp." />
+  <link rel="icon" href="imagens/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="imagens/favicon-192x192.png" />
+  <link rel="apple-touch-icon" href="imagens/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Maria Clara | Psicologia &amp; Recrutamento" />
+  <meta property="og:description" content="Recrutamento, acompanhamento profissional e desenvolvimento pessoal. Vamos conversar?" />
+  <meta property="og:url" content="https://swntsx.github.io/Biopage-Maria-Clara/" />
+  <meta property="og:image" content="https://swntsx.github.io/Biopage-Maria-Clara/imagens/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Maria Clara sorrindo" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Google Fonts: Tipografia Editorial Serif + Sans-Serif minimalista -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
 
@@ -42,15 +57,16 @@
     }
 
     html {
-      scroll-behavior: smooth;
       -webkit-text-size-adjust: 100%;
-      width: 100%;
-      overflow-x: hidden;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
     }
 
     body {
       width: 100%;
       max-width: 100vw;
+      min-height: 100vh;
       min-height: 100dvh;
       background-color: var(--bg-cream);
       color: var(--coffee-bean);
@@ -61,6 +77,7 @@
 
     .bio-wrapper {
       width: 100%;
+      min-height: 100vh;
       min-height: 100dvh;
       background-color: var(--bg-cream);
       overflow-x: hidden;
@@ -72,6 +89,7 @@
     .hero {
       position: relative;
       width: 100%;
+      min-height: 100vh;
       min-height: 100svh;
       background-color: var(--bg-cream);
       display: flex;
@@ -105,6 +123,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
+      height: 76vh;
       height: 76svh;
       min-height: 450px;
       z-index: 1;
@@ -185,10 +204,13 @@
       max-width: 680px;
       padding: 0 24px;
       text-align: center;
-      margin-top: 60svh;
+      margin-top: 60vh;
+      margin-top: max(60svh, 300px);
     }
 
     .title-mask {
+      padding-bottom: 0.08em;
+      margin-bottom: -0.08em;
       overflow: hidden;
       display: block;
     }
@@ -246,7 +268,7 @@
       background-color: rgba(247, 245, 240, 0.75);
       color: var(--burgundy-deep);
       text-decoration: none;
-      font-size: clamp(0.68rem, 2.7vw, 0.78rem);
+      font-size: clamp(0.74rem, 2.9vw, 0.8rem);
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -337,7 +359,7 @@
 
     .about-label {
       display: block;
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.22em;
       text-transform: uppercase;
@@ -500,7 +522,7 @@
     .service-tag {
       display: block;
       margin-top: 6px;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -508,38 +530,6 @@
     }
 
     /* Pilares de Atuação (Clínica & Recrutamento) */
-    .pillars-grid {
-      margin-top: clamp(32px, 5vh, 48px);
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    .pillar-box {
-      padding: 26px 24px;
-      border-radius: 14px;
-      background-color: rgba(47, 27, 26, 0.52);
-      border: 1px solid rgba(239, 239, 201, 0.14);
-    }
-
-    .pillar-box h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.65rem;
-      font-weight: 400;
-      color: var(--cream-accent);
-      margin-bottom: 10px;
-    }
-
-    .pillar-box h3 em {
-      font-style: italic;
-    }
-
-    .pillar-box p {
-      font-size: 0.88rem;
-      font-weight: 300;
-      line-height: 1.75;
-      color: rgba(247, 245, 240, 0.9);
-    }
 
     .pillars-closing {
       margin-top: clamp(30px, 5vh, 44px);
@@ -605,19 +595,6 @@
       gap: 6px;
       min-width: 68px;
       justify-content: flex-end;
-      flex-shrink: 0;
-    }
-
-    .step-badge-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1px solid rgba(100, 0, 23, 0.45);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--burgundy);
-      font-size: 0.75rem;
       flex-shrink: 0;
     }
 
@@ -698,16 +675,6 @@
       color: var(--cream-accent);
     }
 
-    .cta-quote {
-      margin: 14px auto 24px;
-      max-width: 480px;
-      font-family: "Cormorant Garamond", serif;
-      font-style: italic;
-      font-size: clamp(1.15rem, 4.2vw, 1.45rem);
-      line-height: 1.4;
-      color: rgba(247, 245, 240, 0.92);
-    }
-
     .cta-button {
       display: inline-flex;
       align-items: center;
@@ -743,11 +710,6 @@
 
       .cta-card p {
         margin: 14px 0 0;
-        max-width: 580px;
-      }
-
-      .cta-quote {
-        margin: 12px 0 0;
         max-width: 580px;
       }
     }
@@ -800,7 +762,7 @@
       text-align: center;
       padding: 0 20px;
       color: rgba(247, 245, 240, 0.9);
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       line-height: 1.7;
@@ -878,11 +840,6 @@
         padding: 28px;
       }
 
-      .pillars-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-      }
-
       .steps-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
@@ -900,18 +857,6 @@
       .step-number-wrap {
         min-width: auto;
         justify-content: flex-start;
-      }
-
-      .cta-card {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        gap: 36px;
-      }
-
-      .cta-quote {
-        margin: 12px 0 0;
-        max-width: 580px;
       }
 
       .footer-media {
@@ -935,38 +880,26 @@
 
     
 /* =========================================
-   ANIMAÇÃO DE SCROLL REVEAL
+   SCROLL REVEAL — usa "translate" (independente de "transform")
+   para não competir com o hover/active dos cards
 ========================================= */
-
-/* Estado inicial: conteúdo permanece visível sem JavaScript */
-.reveal {
-    opacity: 1;
-    transform: none;
-}
-
-/* Animação ativada somente quando JavaScript está disponível */
 .js .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-
-    transition:
-        opacity 0.85s var(--ease-smooth),
-        transform 0.85s var(--ease-smooth);
+  opacity: 0;
+  translate: 0 24px;
+  transition: opacity 0.85s var(--ease-smooth) var(--d, 0s), translate 0.85s var(--ease-smooth) var(--d, 0s);
 }
-
-/* Estado final */
-.js .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+.js .reveal.visible { opacity: 1; translate: 0 0; }
+.js .service-card.reveal {
+  transition: opacity 0.85s var(--ease-smooth) var(--d, 0s), translate 0.85s var(--ease-smooth) var(--d, 0s),
+    transform 0.4s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth);
 }
-
-/* Respeita usuários que preferem movimento reduzido */
-@media (prefers-reduced-motion: reduce) {
-    .js .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
+.about-text.reveal { --d: 0.1s; }
+.maternity-highlight.reveal { --d: 0.12s; }
+@media (min-width: 1024px) {
+  .card-2.reveal { --d: 0.1s; }
+  .card-3.reveal { --d: 0.2s; }
+  .step-item:nth-child(2).reveal { --d: 0.12s; }
+  .step-item:nth-child(3).reveal { --d: 0.24s; }
 }
 
 /* CORREÇÃO DO BALÃO CTA — MOBILE */
@@ -1026,23 +959,41 @@
   }
 }
 
+
+    .hero-corner-tag img { display: block; width: clamp(128px, 36vw, 180px); height: auto; }
+
+    /* Acessibilidade e performance */
+    picture { display: contents; }
+    a:focus-visible { outline: 2px solid #410006; outline-offset: 3px; }
+    .service-card:focus-visible { outline-color: #f7f5f0; outline-offset: -6px; }
+    .cta-card a:focus-visible { outline-color: #f7f5f0; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0s !important;
+      }
+      .js .reveal { opacity: 1; translate: none; }
+    }
   </style>
 </head>
 <body>
   <main class="bio-wrapper">
     <!-- 1. HERO COM FOTO NO TOPO E BLUR ABAIXO DO PEITO -->
     <header class="hero">
-      <span class="hero-corner-tag">
-        psicologia &amp;<br />psicanálise
-      </span>
+      <div class="hero-corner-tag">
+        <picture>
+          <source type="image/webp" srcset="imagens/logo-maria-clara.webp" />
+          <img src="imagens/logo-maria-clara.png" width="480" height="86" alt="" decoding="async" />
+        </picture>
+      </div>
 
       <div class="hero-media">
-        <img
-          src="imagens/mariaclara.jpg"
-          onerror="this.onerror=null;this.src='imagens/anaclara.jpg';"
-          alt="Maria Clara"
-          class="hero-photo"
-        />
+        <picture>
+          <source type="image/webp" srcset="imagens/mariaclara-640.webp 640w, imagens/mariaclara.webp 1200w" sizes="(min-width: 1024px) 580px, 100vw" />
+          <img src="imagens/mariaclara.jpg" width="1200" height="1271" alt="Maria Clara" class="hero-photo" fetchpriority="high" decoding="async" />
+        </picture>
         <div class="hero-fade-blur" aria-hidden="true"></div>
         <div class="hero-fade-gradient" aria-hidden="true"></div>
       </div>
@@ -1066,17 +1017,17 @@
     </header>
 
     <!-- 2. MANIFESTO & QUEM SOU EU -->
-    <section id="sobre" class="about-section reveal">
+    <section id="sobre" class="about-section">
       <div class="about-inner">
-        <blockquote class="epigraph">
+        <blockquote class="epigraph reveal">
           &ldquo;Há encontros que nos apresentam ao outro. E há aqueles que,
           inesperadamente, nos devolvem a nós mesmos.&rdquo;
         </blockquote>
 
         <div class="editorial-divider" aria-hidden="true"></div>
 
-        <span class="about-label">Sobre mim</span>
-        <p class="about-text">
+        <span class="about-label reveal">Sobre mim</span>
+        <p class="about-text reveal">
           Sou Maria Clara, tenho 23 anos, sou mãe, inquieta e atravessada pela
           subjetividade dos encontros. Foi o desejo de compreender o outro que me
           fez mudar de cidade para cursar Psicologia. O que eu não imaginava era
@@ -1102,34 +1053,34 @@
 
         <div class="services-grid">
           <a
-            href="https://wa.me/556296598209?text=Ol%C3%A1%2C%20Maria%20Clara!%20Gostaria%20de%20saber%20mais%20sobre%20escuta%20psicanal%C3%ADtica."
+            href="https://wa.me/556296598209?text=Ol%C3%A1%2C%20Maria%20Clara!%20Gostaria%20de%20saber%20mais%20sobre%20Recrutamento%20e%20Sele%C3%A7%C3%A3o."
             target="_blank"
             rel="noopener noreferrer"
             class="service-card card-1 reveal"
+            aria-label="Recrutamento e Seleção — conversar no WhatsApp (abre em nova aba)"
           >
-            <img
-              src="imagens/escuta.jpg"
-              onerror="this.onerror=null;this.src='imagens/mariaclara.jpg';"
-              alt="Escuta Psicanalítica"
-            />
+            <picture>
+              <source type="image/webp" srcset="imagens/escuta.webp" />
+              <img src="imagens/escuta.jpg" width="736" height="1104" alt="" loading="lazy" decoding="async" />
+            </picture>
             <div class="service-overlay-left"></div>
             <div class="service-content">
-              <h3 class="service-title">Escuta</h3>
-              <span class="service-tag">Psicanalítica</span>
+              <h3 class="service-title">Recrutamento</h3>
+              <span class="service-tag">&amp; Seleção</span>
             </div>
           </a>
 
           <a
-            href="https://wa.me/556296598209?text=Ol%C3%A1%2C%20Maria%20Clara!%20Gostaria%20de%20saber%20mais%20sobre%20Recrutamento%20e%20Sele%C3%A7%C3%A3o."
+            href="https://wa.me/556296598209?text=Ol%C3%A1%2C%20Maria%20Clara!%20Gostaria%20de%20saber%20mais%20sobre%20acompanhamento%20profissional."
             target="_blank"
             rel="noopener noreferrer"
             class="service-card card-2 align-right reveal"
+            aria-label="Acompanhamento Profissional — conversar no WhatsApp (abre em nova aba)"
           >
-            <img
-              src="imagens/acompanhamento.jpg"
-              onerror="this.onerror=null;this.src='imagens/mariaclara.jpg';"
-              alt="acompanhamento"
-            />
+            <picture>
+              <source type="image/webp" srcset="imagens/acompanhamento.webp" />
+              <img src="imagens/acompanhamento.jpg" width="736" height="1104" alt="" loading="lazy" decoding="async" />
+            </picture>
             <div class="service-overlay-right"></div>
             <div class="service-content">
               <h3 class="service-title">Acompanhamento</h3>
@@ -1142,12 +1093,12 @@
             target="_blank"
             rel="noopener noreferrer"
             class="service-card card-3 reveal"
+            aria-label="Acolhimento e desenvolvimento pessoal — conversar no WhatsApp (abre em nova aba)"
           >
-            <img
-              src="imagens/acolhimento.jpg"
-              onerror="this.onerror=null;this.src='imagens/mariaclara.jpg';"
-              alt="Acolhimento Individual"
-            />
+            <picture>
+              <source type="image/webp" srcset="imagens/acolhimento.webp" />
+              <img src="imagens/acolhimento.jpg" width="736" height="1104" alt="" loading="lazy" decoding="async" />
+            </picture>
             <div class="service-overlay-left"></div>
             <div class="service-content">
               <h3 class="service-title">Acolhimento</h3>
@@ -1159,7 +1110,7 @@
        
 
         <p class="pillars-closing reveal">
-          &ldquo;Entre o movimento do recrutamento e a profundidade da clínica,
+          &ldquo;Entre o movimento do recrutamento e a profundidade da psicologia,
           sigo me descobrindo, movida pelo desejo e transformada pelos
           encontros.&rdquo;
         </p>
@@ -1167,9 +1118,9 @@
     </section>
 
     <!-- 4. COMO FUNCIONA O PROCESSO? -->
-    <section class="process-section reveal">
+    <section class="process-section">
       <div class="process-inner">
-        <h2 class="section-heading">
+        <h2 class="section-heading reveal">
           Como funciona<br />
           <em>o processo?</em>
         </h2>
@@ -1235,6 +1186,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="cta-button"
+          aria-label="Fale comigo pelo WhatsApp (abre em nova aba)"
         >
           Fale Comigo
         </a>
@@ -1244,11 +1196,10 @@
     <!-- 6. RODAPÉ COM FOTO -->
     <footer class="footer-photo-section reveal">
       <div class="footer-media">
-        <img
-          src="imagens/mariaclara.jpg"
-          onerror="this.onerror=null;this.src='imagens/anaclara.jpg';"
-          alt="Maria Clara"
-        />
+        <picture>
+          <source type="image/webp" srcset="imagens/mariaclara-640.webp 640w, imagens/mariaclara.webp 1200w" sizes="(min-width: 1024px) 680px, 100vw" />
+          <img src="imagens/mariaclara.jpg" width="1200" height="1271" alt="" loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div class="footer-vignette" aria-hidden="true"></div>
       <div class="footer-copy">
@@ -1258,28 +1209,7 @@
     </footer>
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const revealElements = document.querySelectorAll(".reveal");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.12,
-          rootMargin: "0px 0px -20px 0px",
-        }
-      );
-
-      revealElements.forEach((el) => observer.observe(el));
-    });
-  </script>
+  <script src="main.js" defer></script>
   
 </body>
 </html>
