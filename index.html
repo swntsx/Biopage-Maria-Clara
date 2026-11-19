@@ -960,7 +960,11 @@
 }
 
 
-    .hero-corner-tag img { display: block; width: clamp(128px, 36vw, 180px); height: auto; }
+    .hero-corner-tag {
+      top: calc(12px + env(safe-area-inset-top, 0px));
+      right: clamp(14px, 4vw, 40px);
+    }
+    .hero-corner-tag img { display: block; width: clamp(92px, 26vw, 160px); height: auto; }
 
     /* Acessibilidade e performance */
     picture { display: contents; }
